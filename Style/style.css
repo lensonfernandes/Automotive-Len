@@ -50,7 +50,7 @@ header ul li, footer ul li{
 
 
 main{
-    height: 78vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,5 +97,9 @@ main button{
 footer{
     background-color: black;
     padding: 20px;
+}
+
+footer ul li:first-child{
+    color:#02bff8;
 }
 
