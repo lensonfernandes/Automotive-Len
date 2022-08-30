@@ -63,7 +63,7 @@ header ul li, footer ul li{
 /* Styling for Main section  */
 
 main{
-    height: 78vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
