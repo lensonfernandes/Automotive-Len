@@ -103,3 +103,21 @@ footer ul li:first-child{
     color:#02bff8;
 }
 
+
+@media only screen and (max-width: 480px) {
+    header,  footer{
+        flex-direction: column;
+    }
+
+    header .header-item-group ul{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    header .header-item-group ul button{
+        visibility: hidden;
+    }
+
+}
+
