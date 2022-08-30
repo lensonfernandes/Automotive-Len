@@ -119,5 +119,27 @@ footer ul li:first-child{
         visibility: hidden;
     }
 
+    main{
+        padding-left:5vw;
+        padding-right: 5vw;
+        justify-content: flex-start;
+        gap:9vh;
+        height: 60vh;
+        
+    }
+
+    main P{
+        color:whitesmoke;
+      
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap:10px;
+      
+    }
+
 }
 
