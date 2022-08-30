@@ -15,6 +15,10 @@ header,  footer{
     padding: 15px;
 }
 
+header h1{
+    font-weight: 400;
+}
+
 header .header-item-group{
     display: flex;
     justify-content: center;
@@ -35,8 +39,9 @@ header .header-item-group ul{
 }
 
 header .header-item-group ul button{
-    background-color: aquamarine;
-    padding: 10px;
+    background-color: #02bff8;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 header ul li, footer ul li{
