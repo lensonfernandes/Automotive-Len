@@ -1,19 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 header,  footer{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 15px;
 }
 
 header .header-item-group{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
 }
+
+
+/* header .header-item-group i{
+    
+} */
+
 
 header .header-item-group ul{
     display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+header .header-item-group ul button{
+    background-color: aquamarine;
+    padding: 10px;
 }
 
 header ul li, footer ul li{
@@ -22,10 +45,19 @@ header ul li, footer ul li{
 
 
 main{
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
 }
 
+.background-img-container{
+    background-image: url("../Assets/car-bg.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
