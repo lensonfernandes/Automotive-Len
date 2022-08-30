@@ -1,13 +1,25 @@
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Repeated color- Variables */
+:root {
+    --primary-color:#02bff8 ;
+    --secondary-color: white;
+    --fallback-background: #cccccc;
+  }
+
+/* Universal selector to nullify default values */
 *{
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--secondary-color);
     font-family: 'Poppins', sans-serif;
     
 }
 
+
+
+/* Flex styling both for header and footer */
 header,  footer{
     display: flex;
     justify-content: space-around;
@@ -15,10 +27,12 @@ header,  footer{
     padding: 15px;
 }
 
+/* Increase the size of Main heading/Logo */
 header h1{
     font-weight: 400;
 }
 
+/* Flex configuration for Header Sub-Division */
 header .header-item-group{
     display: flex;
     justify-content: center;
@@ -27,30 +41,29 @@ header .header-item-group{
 }
 
 
-/* header .header-item-group i{
-    
-} */
-
-
+/* Flex configuration for Header Right - Sub-Division */
 header .header-item-group ul{
     display: flex;
     align-items: center;
     gap:20px;
 }
 
+/* Header button styling */
 header .header-item-group ul button{
-    background-color: #02bff8;
+    background-color: var(--primary-color);
     padding: 15px;
     border-radius: 5px;
 }
 
+/* Remove Bullet points of Header and Footer list */
 header ul li, footer ul li{
     list-style: none;
 }
 
+/* Styling for Main section  */
 
 main{
-    height: 75vh;
+    height: 78vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,9 +74,10 @@ main{
     
 }
 
+/* Background image styling  */
 .background-img-container{
     background-image: url("../Assets/car-bg.jpg");
-    background-color: #cccccc;
+    background-color: var(--fallback-background);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -72,11 +86,11 @@ main{
 }
 
 
-/* Main section */
+/* Main section Tag styling*/
 
 main h2{
     font-size: 300%;
-    color: #02bff8;
+    color: var(--primary-color);
 }
 
 main p{
@@ -84,7 +98,7 @@ main p{
 }
 
 main button{
-    background-color: #02bff8;
+    background-color: var(--primary-color);
     /* padding: 10px; */
     width:fit-content;
     padding: 12px;
@@ -93,18 +107,22 @@ main button{
     border-radius: 5px;
 }
 
-/* footer */
+/* Footer section tags styling */
 footer{
     background-color: black;
     padding: 20px;
 }
 
 footer ul li:first-child{
-    color:#02bff8;
+    color:var(--primary-color);
 }
 
 
+
+/* Mobile screen - Responsiveness  */
+
 @media only screen and (max-width: 480px) {
+    /* To use Flex in Column direction for Phones */
     header,  footer{
         flex-direction: column;
     }
@@ -115,16 +133,18 @@ footer ul li:first-child{
 
     }
 
+    /* Hide Header button on Mobiles as similar button is present at center of the Mobile screen */
     header .header-item-group ul button{
         visibility: hidden;
     }
 
+    /* Rearrange the placement of content of main section */
     main{
         padding-left:5vw;
         padding-right: 5vw;
         justify-content: flex-start;
-        gap:9vh;
-        height: 60vh;
+        gap:6vh;
+        height: 50vh;
         
     }
 
@@ -133,6 +153,7 @@ footer ul li:first-child{
       
     }
 
+    /* Rearrange the placement of content of Footer section */
     footer{
         display: flex;
         justify-content: space-around;
