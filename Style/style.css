@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header,  footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .header-item-group{
+    display: flex;
+}
+
+header .header-item-group ul{
+    display: flex;
+}
+
+header ul li, footer ul li{
+    list-style: none;
+}
+
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
